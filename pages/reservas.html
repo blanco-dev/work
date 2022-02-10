@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bar Palos® | Mar del Plata</title>
+        <link rel="shortcut icon" href="../assets/img/favicon-32x32.png">
+        <link rel="stylesheet" href="../styles/style.css">
+        <script src="https://use.fontawesome.com/b29ce011be.js"></script>
+    </head>
+    
+    <body>
+        <div id="main">
+            <nav class="nav">
+                <div class="nav__container">
+                    <h1 class="nav__logo">Bar Palos</h1>
+                    
+                    <label for="menu" class="nav__label">
+                        <img src="/assets/img/menu.svg" alt="Menu" class="nav__img">
+                    </label>
+                    <input type="checkbox" id="menu" class="nav__input">
+
+                    <div class="nav__menu">
+                        <a href="../index.html" class="nav__item">Inicio</a>
+                        <a href="carta.html" class="nav__item">Carta</a>
+                        <a href="chef.html" class="nav__item">Chef</a>
+                        <a href="reservas.html" class="nav__item">Reservas</a>
+                        <a href="contacto.html" class="nav__item">Contacto</a>
+                    </div>
+                    <div class="nav__menuDesktop">
+                        <a href="../index.html" class="nav__item">Inicio</a>
+                        <a href="carta.html" class="nav__item">Carta</a>
+                        <a href="chef.html" class="nav__item">Chef</a>
+                        <a href="reservas.html" class="nav__item">Reservas</a>
+                        <a href="contacto.html" class="nav__item">Contacto</a>
+                    </div>
+                </div>
+            </nav>
+            <section>
+                <article class="image-container">
+                    <h3>Reservar</h3>
+                    <form action="#" method="POST">
+                        <div class="row">
+                            <label  for="name">Nombre Completo:</label><br />
+                            <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+                        </div>
+                        <div class="row">
+                            <label for="email">Email:</label><br />
+                            <input id="email" class="input" name="email" type="text" value="" size="30" />
+                            <span id="email_validation" class="error_message"></span>
+                        </div>
+                      <div class="row">
+                            <label for="message">Comentarios:</label><br />
+                            <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+                            <span id="message_validation" class="error_message"></span>
+                      </div>
+                            <input id="submit_button" type="submit" value="Enviar datos" />
+                    </form>
+                </article>
+            </section>
+            <footer>
+                <div class="contacto">
+                    <h2>Contacto</h2>
+                    <p>+54 223 0000 0001</p>
+                </div>
+                <div>
+                    <h2>Horario</h2>
+                    <p>Lunes a Domingos 13 Hs</p>
+                    <p>16 Hs 20 Hs  00 Hs</p>
+                </div>
+                <div>
+                    <h2>Nosotros</h2>
+                    <p>Somos un Bar nuevo de la ciudad más linda de la costa atlántica</p>
+                </div>
+                <div>
+                    <h2>Prensa</h2>
+                    <p>+54 223 0000 1000</p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
