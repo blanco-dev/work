@@ -1,206 +1,117 @@
 body {
-    background-color: #293241;
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden; 
+    font-family: sans-serif;
+    overflow-x: hidden;
 }
 
-#main {
+/* Nav Bar */
 
-    height: 600px;
+#menu a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #3f3f3f;
 }
 
-a {
-    text-decoration: none;
-    
+
+/* Video */
+
+.carousel-inner {
+    max-height: 50rem;
 }
 
-/* Menu hamburguesa*/
-
-.nav {
-    background-color: #293241;
-    color: #fff;
+.argentina {
+    color:rgba(13,110,253);
 }
 
-.nav__container {
-    display: flex;
-    height: 90%;
-    width: 90%;
-    margin: 0 auto;
-    justify-content: space-between;
+
+/*Comidas*/
+
+.bold {
+    font-weight: bold;
+}
+
+article img {
+    border-radius: 10px;
+}
+
+.row {
     align-items: center;
 }
 
-.nav__menuDesktop a {
-    color: #fff;
-}
 
+/*Carta Restaurante*/
 
-.nav__logo {
-    font-size: 1.5em;
-    font-weight: 900;
-    margin-left: 5px;
-}
-
-
-.nav__label, .nav__input {
-    display: none;
-}
-
-.nav__menu {
-    display: grid;
-    grid-auto-flow: column;
-    display: block;
-}
-
-.nav__menu a{
-    color: #fff;
-}
-
-
-footer,
-nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-#ulNav a{
-    text-decoration: none;
+.btn1 {
+    height: 45px;
+    width: 35%;
+    border: none;
+    outline: none;
+    background-color: rgba(13,110,253);
     color: white;
+    font-weight: 700;
+    border-radius: 60px;
 }
 
-article.image-container {
-    margin: 0;
-    padding: 0;
-
+.btn1:hover {
+    background-color: rgb(12, 76, 173);
+    transition: 0.5s;
 }
 
-.image-container img {
-    width: 100vw;
-}
-
-#contacto2 {
-    cursor: pointer;
-    text-decoration: none;
+.btn2 {
+    height: 45px;
+    width: 170px;
+    border: none;
+    outline: none;
+    background-color: rgba(13,110,253);
     color: white;
+    font-weight: 700;
+    border-radius: 60px;
 }
 
-.footer {
-    justify-content: center;
+.btn2:hover {
+    background-color: rgb(12, 76, 173);
+    transition: 0.5s;
 }
 
-header {
-    grid-area: header;
+
+.card:hover {
+    box-shadow: -2px -1px 25px 4px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: -2px -1px 25px 4px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: -2px -1px 25px 4px rgba(0, 0, 0, 0.25);
+    transition: 0.5s;
 }
+
+/* Pie de Pagina */
 
 footer {
-    grid-area: footer;
-    background: linear-gradient(to top, black, rgb(233, 77, 77));
+    background: #3f3f3f;
+    min-height: 100px;
 }
 
-.centrar {
+footer p {
+    color: #f3f3f3;
     text-align: center;
 }
 
-section {
-    grid-area: section;
-    display: flex;
-    justify-content: center;
+#iconos i {
+    font-size: 26px;
+    padding: 0 8px;
+    color: #f3f3f3;
 }
 
-nav {
-    grid-area: nav;
-}
-
-footer,
-#main {
-    display: grid;
-}
-
-div.nav__container {
-    margin: 0;
-    padding: 0;
-}
-
-.image-container h3 {
-    text-align: center;
+@media (max-width:768px) {
+    .icono-wrap {
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+    .servicio-fila {
+        text-align: center;
+    }
 }
 
 
-@media screen and (min-width: 320px) {
-    #main {
-        grid-template-columns: auto;
-        grid-template-rows: auto auto auto;
-        grid-template-areas: "nav" "section" "footer";
+@media (max-width:576px) {
+    .icono-wrap {
+        flex-wrap: wrap;
+        justify-content: center !important;
     }
-    
-    article.image-container {
-        width: auto
-    }
-
-    .nav__label {
-        display: block;
-        cursor: pointer;
-    }
-
-    footer {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
-
-    nav {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .nav__menu {
-        position: fixed;
-        top: 80px;
-        bottom: 0;
-        background-color: rgb(84, 153, 231);
-        width: 100%;
-        left: 0;
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: column;
-        align-items: center;
-        clip-path: circle(0 at center);
-        transition: clip-path 1s ease-in-out;
-    }
-
-    .nav__input:checked + .nav__menu {
-        clip-path: circle(100% at center);
-    }
-
-    .nav__menuDesktop{
-        display: none;
-    }
-
-}
-
-@media screen and (min-width: 680px) {
-    #main {
-        grid-template-columns: auto auto;
-        grid-template-areas: "header header" "nav nav" "section section" "footer footer";
-    }
-    .nav__menu {
-        display: inline-block;
-    }
-
-    .nav__label {
-        display: none;
-    }
-    
-    footer {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
-
-    .nav__menuDesktop{
-        display: block;
-    }
-
 }
