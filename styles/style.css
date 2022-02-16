@@ -29,9 +29,22 @@ body {
     font-weight: bold;
 }
 
-article img {
-    border-radius: 10px;
+
+article .animation {
+    transition: all 500ms ease;
 }
+
+article .animation img {
+    border-radius: 10px;
+    transition: all 500ms ease;
+}
+
+
+article .animation img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
 
 .row {
     align-items: center;
