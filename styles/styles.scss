@@ -1,0 +1,123 @@
+@import "_variables";
+@import "_tipografia";
+
+body {
+    font-family: $letra;
+    overflow-x: hidden;
+}
+
+/* Nav Bar */
+
+#menu a {
+    font-size: 18px;
+    font-weight: bold;
+    color: $blackGrey;
+}
+
+/* Video */
+
+.carousel-inner {
+    max-height: 100vh;
+}
+
+.argentina {
+    color: $colorArg;
+}
+
+/*Comidas*/
+
+.bold {
+    font-weight: bold;
+}
+
+article .animation {
+    transition: all 500ms ease;
+    img {
+        border-radius: 10px;
+        transition: all 500ms ease;
+        &:hover{
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+    }
+}
+
+.row {
+    align-items: center;
+}
+
+
+/*Carta Restaurante*/
+
+.btn1 {
+    height: 45px;
+    width: 35%;
+    border: none;
+    outline: none;
+    background-color: $colorArg;
+    color: $blanco;
+    font-weight: 700;
+    border-radius: 60px;
+    &:hover{
+        background-color: $colorArg;
+        transition: 0.5s;
+    }
+}
+
+.btn2 {
+    height: 45px;
+    width: 170px;
+    border: none;
+    outline: none;
+    background-color: $colorArg;
+    color: $blanco;
+    font-weight: 700;
+    border-radius: 60px;
+    &:hover{
+        background-color: $colorArg;
+        transition: 0.5s;
+    }
+}
+
+
+.card:hover {
+    box-shadow: -2px -1px 25px 4px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: -2px -1px 25px 4px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: -2px -1px 25px 4px rgba(0, 0, 0, 0.25);
+    transition: 0.5s;
+}
+
+/* Pie de Pagina */
+
+footer {
+    background: $blackGrey;
+    min-height: 100px;
+    p {
+        color: $blanco;
+        text-align: center;
+    }
+}
+
+#iconos i {
+    font-size: 26px;
+    padding: 0 8px;
+    color: $blanco;
+}
+
+@media (max-width:768px) {
+    .icono-wrap {
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+    .servicio-fila {
+        text-align: center;
+    }
+}
+
+
+@media (max-width:576px) {
+    .icono-wrap {
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+}
