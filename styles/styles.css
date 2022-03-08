@@ -1,13 +1,40 @@
+/*Variables de Colores*/
+/* Variables de operaciones */
+/*Mixin*/
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Montserrat:wght@800&family=Outfit&family=Playfair+Display&display=swap");
 body {
-  font-family: sans-serif;
+  font-family: arial;
   overflow-x: hidden;
 }
 
 /* Nav Bar */
 #menu a {
-  font-size: 18px;
   font-weight: bold;
-  color: #3f3f3f;
+  font-size: 1rem;
+  color: white;
+}
+
+.navbar {
+  position: absolute;
+  z-index: 2;
+}
+
+.photo {
+  width: 100px;
+  height: 100px;
+}
+
+a {
+  font-size: 17px;
+}
+
+a:hover {
+  color: grey !important;
+  transition: all 500ms ease !important;
+}
+
+.navbar-nav {
+  text-align: center;
 }
 
 /* Video */
@@ -20,8 +47,8 @@ body {
 }
 
 /*Comidas*/
-.bold {
-  font-weight: bold;
+h3 {
+  font-family: 'Playfair Display';
 }
 
 article .animation {
@@ -42,16 +69,20 @@ article .animation img:hover {
   align-items: center;
 }
 
+.blackgrey2, footer {
+  background: #3f3f3f;
+}
+
 /*Carta Restaurante*/
 .btn1 {
-  height: 45px;
+  height: 45.8px;
   width: 35%;
   border: none;
   outline: none;
   background-color: rgba(13, 110, 253, 0.75);
   color: white;
   font-weight: 700;
-  border-radius: 60px;
+  border-radius: 60.8px;
 }
 
 .btn1:hover {
@@ -60,14 +91,14 @@ article .animation img:hover {
 }
 
 .btn2 {
-  height: 45px;
-  width: 170px;
+  height: 45.8px;
+  width: 35%;
   border: none;
   outline: none;
   background-color: rgba(13, 110, 253, 0.75);
   color: white;
   font-weight: 700;
-  border-radius: 60px;
+  border-radius: 60.8px;
 }
 
 .btn2:hover {
@@ -84,8 +115,7 @@ article .animation img:hover {
 
 /* Pie de Pagina */
 footer {
-  background: #3f3f3f;
-  min-height: 100px;
+  min-height: 100.71429px;
 }
 
 footer p {
@@ -94,7 +124,7 @@ footer p {
 }
 
 #iconos i {
-  font-size: 26px;
+  font-size: 20px;
   padding: 0 8px;
   color: white;
 }
@@ -113,5 +143,9 @@ footer p {
   .icono-wrap {
     flex-wrap: wrap;
     justify-content: center !important;
+  }
+  ul li {
+    background-color: grey;
+    height: 120px;
   }
 }

@@ -1,0 +1,5 @@
+Cambios dentro del SEO:
+
+"Se modificaron los titles, para mejorar el SEO de las paginas webs (añadiendo los titulos más descriptivos)"
+"Se añadieron las siguientes Keywords: Tragos, Bebidas, Música, Bar, Fiestas"
+"Se añadieron un meta description en las paginas HTML con la descripción de los sitios correspondiente a cada uno"

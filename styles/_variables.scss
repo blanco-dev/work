@@ -1,3 +1,31 @@
+/*Variables de Colores*/
+
 $colorArg: rgba(13, 110, 253, 0.75);
 $blanco: white;
 $blackGrey: #3f3f3f;
+
+/* Variables de operaciones */
+
+$ancho: 768px;
+
+// Maps and Map get
+
+$textos: (
+    h3: 35px,
+    h4: 20px,
+    h5: 12px,
+    h6: 8px
+);
+
+$h3: map-get($textos, h3);
+$h4: map-get($textos, h4);
+$h5: map-get($textos, h5);
+$h6: map-get($textos, h6);
+
+
+$listaAnidada: (btn1,($ancho/10) - 31,35%,none,$colorArg,$blanco,700,($ancho/10) - 16,0.5s) (btn2,($ancho/10) - 31,35%,none,$colorArg,$blanco,700,($ancho/10) - 16,0.5s);
+
+/*Mixin*/
+@mixin bold {
+    font-weight: bold;
+}

@@ -1,17 +1,39 @@
 @import "_variables";
-@import "_tipografia";
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Montserrat:wght@800&family=Outfit&family=Playfair+Display&display=swap');
 
 body {
-    font-family: $letra;
+    font-family: arial;
     overflow-x: hidden;
 }
 
 /* Nav Bar */
 
 #menu a {
-    font-size: 18px;
-    font-weight: bold;
-    color: $blackGrey;
+    @include bold;
+    font-size: 1rem;
+    color: $blanco;
+}
+
+.navbar {
+    position: absolute;
+    z-index: 2;
+}
+
+.photo {
+    width: 100px;
+    height: 100px;
+}
+
+a {
+    font-size: 17px;
+    &:hover{
+    color: grey !important;
+    transition: all 500ms ease !important; 
+    }
+}
+
+.navbar-nav {
+    text-align: center;
 }
 
 /* Video */
@@ -26,8 +48,8 @@ body {
 
 /*Comidas*/
 
-.bold {
-    font-weight: bold;
+h3 {
+    font-family: 'Playfair Display'; 
 }
 
 article .animation {
@@ -46,39 +68,28 @@ article .animation {
     align-items: center;
 }
 
+.blackgrey2 {
+    background: $blackGrey;
+}
 
 /*Carta Restaurante*/
 
-.btn1 {
-    height: 45px;
-    width: 35%;
-    border: none;
-    outline: none;
-    background-color: $colorArg;
-    color: $blanco;
-    font-weight: 700;
-    border-radius: 60px;
-    &:hover{
+@each $color, $height, $width, $none,$colorArg,$blanco,$siete,$height2,$fivesecond in $listaAnidada {
+    .#{$color} {
+        height: $height;
+        width: $width;
+        border: $none;
+        outline: $none;
         background-color: $colorArg;
-        transition: 0.5s;
+        color: $blanco;
+        font-weight: $siete;
+        border-radius: $height2;
+        &:hover{
+            background-color: $colorArg;
+            transition: $fivesecond;
+        }
     }
 }
-
-.btn2 {
-    height: 45px;
-    width: 170px;
-    border: none;
-    outline: none;
-    background-color: $colorArg;
-    color: $blanco;
-    font-weight: 700;
-    border-radius: 60px;
-    &:hover{
-        background-color: $colorArg;
-        transition: 0.5s;
-    }
-}
-
 
 .card:hover {
     box-shadow: -2px -1px 25px 4px rgba(0, 0, 0, 0.25);
@@ -90,8 +101,8 @@ article .animation {
 /* Pie de Pagina */
 
 footer {
-    background: $blackGrey;
-    min-height: 100px;
+    @extend .blackgrey2;
+    min-height: ($ancho/7) - 9;
     p {
         color: $blanco;
         text-align: center;
@@ -99,12 +110,12 @@ footer {
 }
 
 #iconos i {
-    font-size: 26px;
+    font-size: $h4;
     padding: 0 8px;
     color: $blanco;
 }
 
-@media (max-width:768px) {
+@media (max-width:$ancho) {
     .icono-wrap {
         flex-wrap: wrap;
         justify-content: center !important;
@@ -114,10 +125,15 @@ footer {
     }
 }
 
-
-@media (max-width:576px) {
+@media (max-width:($ancho/2) + 192) {
     .icono-wrap {
         flex-wrap: wrap;
         justify-content: center !important;
+    }
+    ul {
+        li {
+        background-color: grey;
+           height: 120px;
+        }
     }
 }
