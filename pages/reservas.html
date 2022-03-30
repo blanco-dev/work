@@ -6,94 +6,88 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Realiza ahora las reservas para las siguientes 48hs!!.">
         <meta name="keywords" content="Tragos, Bebidas, Música, Bar, Fiestas">
-        <title>Reservas | Whisky Bar® | Mar del Plata</title>
+        <title>Reservas | Food & Drink® | Mar del Plata</title>
         <link rel="shortcut icon" href="../assets/img/favicon-32x32.png" type="image/x-icon">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
         <link rel="stylesheet" href="../styles/styles.css">
     </head>
     <body>
-        
       
-        <header>
-          <nav class="navbar fixed-top navbar-expand-lg navbar-dark" id="menu">
+      <!-------------- NAV BAR ------------->
+      <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark">
           <div class="container-fluid">
             <a href="../index.html "><img src="../assets/img/logofinal.png" alt="logofinal" class="photo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <div class="mx-auto"></div>
-              <ul class="navbar-nav tabla">
+              <div class="d-flex">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                  <a class="nav-link active color" aria-current="page" href="../index.html">Inicio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="carta.html">Carta</a>
+                  <a class="nav-link color tipo" href="carta.html">Carta</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="chef.html">Chef</a>
+                  <a class="nav-link color tipo" href="chef.html">Chef</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="reservas.html">Reservas</a>
+                  <a class="nav-link color tipo" href="reservas.html">Reservas</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="contacto.html">Contacto</a>
+                  <a class="nav-link color tipo" href="contacto.html">Contacto</a>
                 </li>
               </ul>
             </div>
+            </div>
           </div>
         </nav>
-      </header> 
+      </header>
         
-        <!-------------- SLIDER DE FOTOS ------------->
+        <!-------------- Foto ------------->
 
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="../assets/img/slider.jpg" class="d-block w-100" alt="asdasd">
-              </div>
-              <div class="carousel-item">
-                <img src="../assets/img/slider3.jpg" class="d-block w-100" alt="asdsad">
-              </div>
+        <div id="carouselExampleControls class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../assets/img/reservas.png" class="d-block w-100" alt="asdasd">
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-
-        <div class="m-5">
-            <h2 class="text-center p-4">Complete los datos para contactarnos con usted!!</h2>
-            <label for="exampleFormControlInput1" class="form-label">Correo Electronico</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
           </div>
-          <div class="m-5">
-            <form>
-            <label for="exampleFormControlTextarea1" class="form-label">Comentarios</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            <button class="btn2 mt-3" type="submit">Enviar</button>
+      </div>
+
+
+          <!--Sistema de Reservas-->
+
+        <section class="form-register">
+          <h4>Reservaciones</h4>
+          <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
+          <input class="controls" type="text" name="number" id="number" placeholder="Ingrese su Número de Telefono">
+          <input class="controls" type="date" name="date" id="date" placeholder="Ingrese la fecha de su reserva">
+          <p class="text2">Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
+          <input class="form-check-input elinput" type="checkbox" value="" aria-label="">
+          <form action="" method="post">
+          <input class="botons" type="submit" value="Contactenme">
         </form>
-        </div>
+        </section>
 
         <!-------------- Pie de Pagina ------------->
 
-       <footer class="w-100 d-flex align-items-center justify-content-center flex-wrap">
-        <p class="fs-5 px-3 pt-3">
-            Whisky Bar. &copy; Todos los Derechos Reservados 2022
-        </p>
-        <div id="iconos">
-            <a href="#"><i class="bi bi-facebook"></i></a>
-            <a href="#"><i class="bi bi-instagram"></i></a>
-            <a href="#"><i class="bi bi-whatsapp"></i></a>
-        </div>
-        </footer>
+        <footer class="w-100 d-flex align-items-center justify-content-center flex-column">
+          <p class="fs-5 px-3 pt-3 copyright">
+              Food & Drink. &copy; Todos los Derechos Reservados 2022
+          </p>
+          <div id="iconos">
+              <a href="https://whatsapp.com" target="_blank"><i class="bi bi-whatsapp"></i></a>
+              <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+              <a href="https://linkedin.com" target="_blank"><i class="bi bi-linkedin"></i></a>
+          </div>
+    </footer>
+    <p class="creditos">creado con 💗 por <a id="nombre" href="https://github.com/blanco-dev" target="_blank">blanco-dev</a></p>
         
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    </body>
+        <script src="https://kit.fontawesome.com/2b8cda8f85.js" crossorigin="anonymous"></script>
+      </body>
 </html>

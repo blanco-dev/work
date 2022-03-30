@@ -2,6 +2,7 @@
 /* Variables de operaciones */
 /*Mixin*/
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Montserrat:wght@800&family=Outfit&family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Montserrat:wght@800&family=Outfit&family=Playfair+Display&family=Work+Sans:wght@100&display=swap");
 body {
   font-family: arial;
   overflow-x: hidden;
@@ -15,35 +16,52 @@ body {
 }
 
 .navbar {
-  position: absolute;
-  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
-.photo {
-  width: 100px;
-  height: 100px;
-}
-
-a {
+.color {
+  color: white !important;
   font-size: 17px;
 }
 
-a:hover {
+.color:hover {
   color: grey !important;
   transition: all 500ms ease !important;
 }
 
-.navbar-nav {
-  text-align: center;
+.burger {
+  justify-content: center;
 }
 
-/* Video */
+.photo {
+  width: 70px;
+  height: 70px;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  justify-content: flex-end;
+}
+
 .carousel-inner {
   max-height: 100vh;
+  height: 100%;
+  width: 100%;
 }
 
 .argentina {
   color: rgba(13, 110, 253, 0.75);
+}
+
+.fotos {
+  opacity: 0.8;
+}
+
+.texto {
+  position: absolute;
+  color: white;
+  top: 50px;
+  left: 50px;
+  right: 50px;
 }
 
 /*Comidas*/
@@ -75,14 +93,14 @@ article .animation img:hover {
 
 /*Carta Restaurante*/
 .btn1 {
-  height: 45.8px;
+  height: 68.1px;
   width: 35%;
   border: none;
   outline: none;
   background-color: rgba(13, 110, 253, 0.75);
   color: white;
   font-weight: 700;
-  border-radius: 60.8px;
+  border-radius: 83.1px;
 }
 
 .btn1:hover {
@@ -91,14 +109,14 @@ article .animation img:hover {
 }
 
 .btn2 {
-  height: 45.8px;
+  height: 68.1px;
   width: 35%;
   border: none;
   outline: none;
   background-color: rgba(13, 110, 253, 0.75);
   color: white;
   font-weight: 700;
-  border-radius: 60.8px;
+  border-radius: 83.1px;
 }
 
 .btn2:hover {
@@ -113,14 +131,85 @@ article .animation img:hover {
   transition: 0.5s;
 }
 
+.tipo {
+  color: #252525;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+}
+
+/* Formulario */
+.form-register {
+  width: 400px;
+  background: #24303c;
+  padding: 30px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  font-family: 'calibri';
+  color: white;
+  box-shadow: 7px 13px 37px #000;
+}
+
+.form-register h4 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.controls {
+  width: 100%;
+  background: #24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #1f53c5;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: white;
+}
+
+.form-register p {
+  height: 20px;
+  font-size: 18px;
+  text-align: end;
+  margin: 3px;
+}
+
+.elinput {
+  margin-left: -16px;
+  margin-top: -17px;
+}
+
+.form-register a {
+  color: white;
+  text-decoration: none;
+}
+
+.form-register a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.form-register .botons {
+  width: 100%;
+  background: #1f53c5;
+  border: none;
+  padding: 12px;
+  color: white;
+  font-size: 16px;
+}
+
 /* Pie de Pagina */
 footer {
-  min-height: 100.71429px;
+  min-height: 132.57143px;
 }
 
 footer p {
   color: white;
   text-align: center;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
 }
 
 #iconos i {
@@ -129,7 +218,25 @@ footer p {
   color: white;
 }
 
-@media (max-width: 768px) {
+.creditos {
+  text-align: center;
+  background-color: #3f3f3f;
+  color: white;
+  margin: 0;
+}
+
+#nombre {
+  cursor: pointer;
+  text-decoration: none;
+  color: red;
+}
+
+#nombre:hover {
+  color: #eb7676;
+  transition: all 500ms ease !important;
+}
+
+@media (max-width: 991px) {
   .icono-wrap {
     flex-wrap: wrap;
     justify-content: center !important;
@@ -139,13 +246,22 @@ footer p {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 687.5px) {
   .icono-wrap {
     flex-wrap: wrap;
     justify-content: center !important;
   }
-  ul li {
-    background-color: grey;
-    height: 120px;
+  .copyright {
+    font-size: 18px !important;
+  }
+  .form-register {
+    width: 300px;
+  }
+  .form-register p {
+    font-size: 0.80rem;
+    text-align: center;
+  }
+  .form-register .elinput {
+    margin-left: 0;
   }
 }

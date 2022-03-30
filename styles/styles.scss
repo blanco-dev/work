@@ -1,5 +1,6 @@
 @import "_variables";
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Montserrat:wght@800&family=Outfit&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Montserrat:wght@800&family=Outfit&family=Playfair+Display&family=Work+Sans:wght@100&display=swap');
 
 body {
     font-family: arial;
@@ -15,16 +16,11 @@ body {
 }
 
 .navbar {
-    position: absolute;
-    z-index: 2;
+    background-color: rgba(0,0,0,0.9);
 }
 
-.photo {
-    width: 100px;
-    height: 100px;
-}
-
-a {
+.color {
+    color: white !important;
     font-size: 17px;
     &:hover{
     color: grey !important;
@@ -32,20 +28,48 @@ a {
     }
 }
 
-.navbar-nav {
-    text-align: center;
+.burger {
+    justify-content: center;
+}
+.photo {
+    width: 70px;
+    height: 70px;
 }
 
-/* Video */
+
+// a {
+//     font-size: 17px;
+//     &:hover{
+//     color: grey !important;
+//     transition: all 500ms ease !important; 
+//     }
+// }
+
+.navbar-expand-lg .navbar-collapse { 
+    justify-content: flex-end;    
+}
 
 .carousel-inner {
     max-height: 100vh;
+    height: 100%;
+    width: 100%;
 }
 
 .argentina {
     color: $colorArg;
 }
 
+.fotos {
+    opacity: 0.8;
+}
+
+.texto {
+    position: absolute;
+    color: white;
+    top: 50px;
+    left: 50px;
+    right: 50px;
+}
 /*Comidas*/
 
 h3 {
@@ -98,6 +122,76 @@ article .animation {
     transition: 0.5s;
 }
 
+.tipo {
+    color: #252525;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+}
+
+/* Formulario */
+
+.form-register {
+    width: 400px;
+    background: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+ 
+.form-register h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+  
+.controls {
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+}
+  
+.form-register p {
+    height: 20px;
+    font-size: 18px;
+    text-align: end;
+    margin: 3px;
+}
+
+.elinput{
+    margin-left: -16px;
+    margin-top: -17px;
+}
+.form-register a {
+    color: white;
+    text-decoration: none;
+}
+  
+.form-register a:hover {
+    color: white;
+    text-decoration: underline;
+}
+  
+.form-register .botons {
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    font-size: 16px;
+}
+  
+
 /* Pie de Pagina */
 
 footer {
@@ -106,6 +200,8 @@ footer {
     p {
         color: $blanco;
         text-align: center;
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 600;
     }
 }
 
@@ -113,6 +209,23 @@ footer {
     font-size: $h4;
     padding: 0 8px;
     color: $blanco;
+}
+
+.creditos {
+    text-align: center;
+    background-color: #3f3f3f;
+    color: white;
+    margin: 0;
+}
+
+#nombre {
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+    &:hover{
+        color: rgb(235, 118, 118);
+      transition: all 500ms ease !important; 
+    }
 }
 
 @media (max-width:$ancho) {
@@ -130,10 +243,17 @@ footer {
         flex-wrap: wrap;
         justify-content: center !important;
     }
-    ul {
-        li {
-        background-color: grey;
-           height: 120px;
-        }
+    .copyright {
+        font-size: 18px !important;
     }
+    .form-register {
+        width: 300px;
+    p {
+        font-size: 0.80rem;
+        text-align: center;
+    }
+    .elinput {
+        margin-left: 0;
+    }
+    } 
 }
